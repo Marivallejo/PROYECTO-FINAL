@@ -1,0 +1,62 @@
+
+#carouselExample {
+    max-width: 1200px;
+    height: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+#carouselExample .carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.col-md-6 {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Estilo para los encabezados dentro de los botones */
+.btn-block h4 {
+    margin: 0;
+    color: white; /* Asegura que el texto del botón sea blanco */
+}
+
+.img-fluid {
+    width: 100%; /* Asegura que la imagen abarque todo el ancho del contenedor */
+    height: 200px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px; /* Bordes redondeados para un mejor aspecto */
+
+}
+/* Estilo para la imagen en la barra de navegación */
+.navbar-logo {
+    height: 80px; /* Ajusta la altura de la imagen */
+    width: 80p; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 5px; /* Bordes redondeados para un mejor aspecto */
+}
+
+.img-square {
+    width: 100%; /* Asegura que la imagen abarque todo el ancho del contenedor */
+    max-width: 300px; /* Establece un ancho máximo para las imágenes */
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el área del contenedor sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados para un mejor aspecto */
+    margin: 20px 0; /* Margen superior e inferior para separar la imagen del texto */
+}

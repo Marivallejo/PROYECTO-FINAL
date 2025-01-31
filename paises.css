@@ -1,0 +1,58 @@
+/* Estilo para el footer */
+footer {
+    width: 100%; /* Asegura que el footer abarque todo el ancho de la pantalla */
+    position: relative;
+    left: 0;
+    right: 0;
+    background-color: #343a40; /* Color de fondo */
+    color: white; /* Color del texto */
+    padding: 20px 0; /* Espaciado interno */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+footer a {
+    color: white; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Subrayado al pasar el cursor */
+}
+
+/* Otros estilos */
+.world-map {
+    width: 100%;
+    height: 700px;
+    background: url('https://upload.wikimedia.org/wikipedia/commons/8/83/World_map_blank_without_borders.svg') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.highlighted {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+body {
+    background-color: #f8f9fa;
+}
+
+.sector-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.sector-card:hover {
+    transform: scale(1.05);
+}
+
+.navbar-logo {
+    height: 80px; /* Ajusta la altura de la imagen */
+    width: 80px; /* Mantiene la proporción de la imagen */
+    margin-right: 10px; /* Espacio entre la imagen y el texto */
+    border-radius: 5px; /* Bordes redondeados para un mejor aspecto */
+}
+
+/* Estilo para justificar el texto en las columnas */
+.text-justify {
+    text-align: justify;
+}

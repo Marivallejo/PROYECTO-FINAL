@@ -1,0 +1,21 @@
+body{
+    background-color: rgb(247, 247, 248) ;
+}
+.mapadiv{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapadiv path{
+    fill:rgb(121, 174, 243);
+    stroke: #634abe;
+    stroke-width: 2px;
+
+}
+
+.mapadiv :hover{
+    fill: #2014c9;
+
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sectores - NexuBiz Global</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="intento2.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="fotor-ai-20250130102429.jpg" alt="logo" class="navbar-logo">
+            <a class="navbar-brand" href="#">NexusBiz Global</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="paises.html">Países</a></li>
+                    <li class="nav-item"><a class="nav-link" href="busqueda.html">Búsqueda</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4 text-center">Sectores</h2>
+        <div class="row justify-content-center mb-4">
+            <div class="col-md-6">
+                <input type="text" id="search-input" class="form-control" placeholder="Buscar sector...">
+            </div>
+        </div>
+        <div class="row" id="sector-cards">
+            <div class="col-md-4 mb-3 sector-card" data-sector="Tecnológico">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnológico</h5>
+                        <p class="card-text">Empresas líderes en software, IA y más.</p>
+                        <a href="tecnologia.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 sector-card" data-sector="Energético">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Energético</h5>
+                        <p class="card-text">Empresas de energías renovables y petróleo.</p>
+                        <a href="energia.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 sector-card" data-sector="Financiero">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Financiero</h5>
+                        <p class="card-text">Bancos y empresas de inversión.</p>
+                        <a href="finanzas.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 sector-card" data-sector="Multisectorial">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Multisectorial</h5>
+                        <p class="card-text">Empresas de diferentes regiones y sectores</p>
+                        <a href="multisectoriales.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 sector-card" data-sector="Agrícola">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Agrícola</h5>
+                        <p class="card-text">Empresas de agricultura y agroindustria.</p>
+                        <a href="agricola.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 sector-card" data-sector="Comercio y Exportación">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Comercio y Exportación</h5>
+                        <p class="card-text">Empresas de comercio internacional y exportación.</p>
+                        <a href="comercio.html" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <p>Contacto: NexusBiz@businessdirectory.com | Redes Sociales: <a href="#" class="text-white">Facebook</a>, <a href="#" class="text-white">X</a>, <a href="#" class="text-white">Instagram</a></p>
+        <p>Realizado por Katherine Sarai Huerta Almora y María de los Angeles Vallejo González el 30/01/25</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('search-input').addEventListener('input', function() {
+            var input = this.value.toLowerCase();
+            var cards = document.querySelectorAll('.sector-card');
+
+            cards.forEach(function(card) {
+                var sector = card.getAttribute('data-sector').toLowerCase();
+                if (sector.includes(input)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

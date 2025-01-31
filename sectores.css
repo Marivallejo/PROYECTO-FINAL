@@ -1,0 +1,33 @@
+        body {
+            background-color: #f8f9fa;
+        }
+        .sector-card {
+            margin-bottom: 50px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .sector-card:hover {
+            transform: scale(1.05);
+        }
+        header {
+            margin-bottom: 50px; /* Espaciado debajo del header */
+        }
+        
+        footer {
+            margin-top: 50px; /* Espaciado encima del footer */
+        }
+        
+        .sector-card {
+            transition: transform 0.3s ease-in-out;
+            margin: 20px;
+        }
+        
+        .sector-card:hover {
+            transform: scale(1.05);
+        }
+        .navbar-logo {
+            height: 80px; /* Ajusta la altura de la imagen */
+            width: 80p; /* Mantiene la proporción de la imagen */
+            margin-right: 10px; /* Espacio entre la imagen y el texto */
+            border-radius: 5px; /* Bordes redondeados para un mejor aspecto */
+        }
